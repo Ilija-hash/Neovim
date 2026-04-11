@@ -1,0 +1,41 @@
+return {
+  "saghen/blink.cmp",
+  opts = {
+    completion = {
+      ghost_text = {
+        enabled = false,
+      },
+    },
+    keymap = {
+      preset = "none", -- IMPORTANT: disable defaults
+
+      ["<C-Space>"] = { "show", "show_documentation", "hide_documentation" },
+
+      ["<CR>"] = { "accept", "fallback" },
+
+      ["<Tab>"] = {
+        function(cmp)
+          if cmp.is_visible() then
+            return cmp.select_next()
+          elseif cmp.snippet_active() then
+            return cmp.snippet_forward()
+          end
+          return false
+        end,
+        "fallback",
+      },
+
+      ["<S-Tab>"] = {
+        function(cmp)
+          if cmp.is_visible() then
+            return cmp.select_prev()
+          elseif cmp.snippet_active() then
+            return cmp.snippet_backward()
+          end
+          return false
+        end,
+        "fallback",
+      },
+    },
+  },
+}
