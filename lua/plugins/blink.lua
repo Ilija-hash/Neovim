@@ -5,6 +5,14 @@ return {
       ghost_text = {
         enabled = false,
       },
+      menu = {
+        border = "rounded", -- none | single | double | rounded
+      },
+      documentation = {
+        window = {
+          border = "rounded",
+        },
+      },
     },
     keymap = {
       preset = "none", -- IMPORTANT: disable defaults
