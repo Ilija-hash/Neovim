@@ -4,3 +4,4 @@
 
 vim.opt.shell = "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -NoLogo"
 vim.opt.clipboard = "unnamedplus"
+vim.opt.autochdir = true

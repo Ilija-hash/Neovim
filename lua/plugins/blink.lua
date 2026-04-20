@@ -9,7 +9,7 @@ return {
     keymap = {
       preset = "none", -- IMPORTANT: disable defaults
 
-      ["<C-Space>"] = { "show", "show_documentation", "hide_documentation" },
+      ["<C-f>"] = { "show", "show_documentation", "hide_documentation" },
 
       ["<CR>"] = { "accept", "fallback" },
 
