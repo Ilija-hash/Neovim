@@ -19,21 +19,21 @@ return {
   --     end,
   --   },
   --
-  {
-    "AlexvZyl/nordic.nvim",
-    name = "nordic",
-    config = function()
-      vim.cmd("colorscheme nordic")
-    end,
-  },
-  --
   -- {
-  --   "rose-pine/neovim",
-  --   name = "rose-pine",
+  --   "AlexvZyl/nordic.nvim",
+  --   name = "nordic",
   --   config = function()
-  --     vim.cmd("colorscheme rose-pine")
+  --     vim.cmd("colorscheme nordic")
   --   end,
   -- },
+  --
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    config = function()
+      vim.cmd("colorscheme rose-pine")
+    end,
+  },
   --
   -- {
   --   "rebelot/kanagawa.nvim",

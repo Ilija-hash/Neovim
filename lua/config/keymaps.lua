@@ -12,3 +12,5 @@ end, { desc = "Open Dashboard" })
 vim.keymap.set("n", "<C-d>", "yyp", { noremap = true, silent = true })
 
 -- vim.keymap.set("n", "<C-a>", "ggVG", { desc = "Select All" })
+
+vim.keymap.set("n", "<C-a>", "ggVG", { desc = "Select All" })
